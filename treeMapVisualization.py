@@ -30,7 +30,7 @@ data.append({
     'name': '其它品牌\n' + '{:.2%}'.format(otherBrands/denominator)
 })
 c = (
-        TreeMap({'width': '1500px', 'height': '1000px'})
-        .add("演示数据", data, label_opts=opts.LabelOpts(position='inside', vertical_align='middle', font_size=18, font_weight='bolder'))
+        TreeMap({'width': '1200px', 'height': '800px'})
+        .add("演示数据", data, label_opts=opts.LabelOpts(position='inside', vertical_align='middle', font_size=22, font_weight='bolder'))
         .set_global_opts(legend_opts=opts.LegendOpts(is_show=False))
     ).render('renderHtml/brandTotalShoppers.html')
